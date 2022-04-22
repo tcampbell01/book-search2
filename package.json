@@ -1,0 +1,31 @@
+{
+  "name": "book-search2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcampbell01/book-search2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcampbell01/book-search2/issues"
+  },
+  "homepage": "https://github.com/tcampbell01/book-search2#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.15.0",
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "graphql": "^15.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
