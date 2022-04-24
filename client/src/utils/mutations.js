@@ -7,6 +7,7 @@ export const LOGIN_USER = gql`
       user {
         _id
         username
+        
       }
     }
   }
@@ -25,14 +26,12 @@ export const ADD_USER = gql`
 `;
 
 export const SAVE_BOOK = gql`
-  mutation saveBook($input: savedBook!) {
-    saveBook(input: $input) {
+  mutation saveBook($bookData: bookInput!) {
+    saveBook(bookData: $bookData) {
       _id
       username
       email
-      bookCount
       savedBooks {
-        #_id
         bookId
         authors
         image
@@ -50,9 +49,7 @@ export const REMOVE_BOOK = gql`
       _id
       username
       email
-      bookCount
       savedBooks {
-        #_id
         bookId
         authors
         image
