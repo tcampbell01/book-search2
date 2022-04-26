@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { 
   ApolloClient,
-  inMemoryCache,
+  InMemoryCache,
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
@@ -30,7 +30,7 @@ const authLink = setContext((_, { headers }) => {
 
 const client = new ApolloClient({
  link: authLink.concat(httpLink),
- cache: new inMemoryCache(),
+ cache: new InMemoryCache(),
      
 });
 
